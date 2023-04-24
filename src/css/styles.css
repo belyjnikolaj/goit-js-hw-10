@@ -1,5 +1,15 @@
-* {
-  box-sizing: border-box;
+
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+    box-sizing: border-box;
+}
+ul,
+li {
+  list-style: none;
 }
 
 body {
@@ -10,6 +20,7 @@ body {
   background-color: #fafafa;
   color: #212121;
   line-height: 1.5;
+  padding: 16px;
 }
 
 #search-box {
@@ -17,4 +28,20 @@ body {
   padding: 8px;
   max-width: 320px;
   margin-bottom: 16px;
+}
+.country-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  
+}
+.country-info{
+  margin: 0;
+}
+
+.container-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 10px;
 }
